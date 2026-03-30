@@ -1,0 +1,138 @@
+@import "tailwindcss";
+
+@theme inline {
+  --color-gold: #C9A84C;
+  --color-gold-light: #E0C070;
+  --color-gold-dark: #B8963F;
+  --color-dark: #0A0A0A;
+  --color-dark-lighter: #151515;
+  --color-dark-card: #111111;
+  --font-sans: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-serif: "Playfair Display", Georgia, "Times New Roman", Times, serif;
+}
+
+body {
+  background: var(--color-dark);
+  color: #ffffff;
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Gold shimmer text effect — matches omarwisemanwealth.com hero h1 exactly */
+.gold-shimmer {
+  background: linear-gradient(
+    135deg,
+    #a07830 0%,
+    #e0c070 35%,
+    #ffffff 50%,
+    #e0c070 65%,
+    #a07830 100%
+  );
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  animation: owShimmer 6s linear infinite;
+}
+
+/* Gold gradient text (static) */
+.gold-gradient {
+  background: linear-gradient(135deg, #C9A84C, #E0C070, #C9A84C);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Pulsing gold glow on buttons */
+.gold-pulse {
+  animation: bundlePulse 2s ease-in-out infinite;
+}
+
+/* Shimmer overlay for cards/buttons */
+.shimmer-overlay {
+  position: relative;
+  overflow: hidden;
+}
+.shimmer-overlay::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(224, 192, 112, 0.15),
+    transparent
+  );
+  animation: shimmerSlide 3s ease-in-out infinite;
+}
+
+/* Fade in up animation */
+.fade-in-up {
+  animation: fadeInUp 0.8s ease-out forwards;
+  opacity: 0;
+}
+
+/* Gold border glow */
+.gold-border-glow {
+  border: 1px solid rgba(201, 168, 76, 0.3);
+  box-shadow: 0 0 15px rgba(201, 168, 76, 0.1), inset 0 0 15px rgba(201, 168, 76, 0.05);
+}
+
+/* Gold divider */
+.gold-divider {
+  height: 1px;
+  background: linear-gradient(90deg, transparent, #C9A84C, transparent);
+}
+
+/* Red metallic bar */
+.red-metallic-bar {
+  background: linear-gradient(
+    180deg,
+    #c0392b 0%,
+    #8b1a1a 40%,
+    #a52a2a 60%,
+    #c0392b 80%,
+    #e74c3c 100%
+  );
+  box-shadow: 0 2px 8px rgba(139, 26, 26, 0.5);
+}
+
+@keyframes owShimmer {
+  0% { background-position: 0% center; }
+  100% { background-position: 200% center; }
+}
+
+@keyframes shimmerSlide {
+  0% { left: -100%; }
+  50% { left: 100%; }
+  100% { left: 100%; }
+}
+
+@keyframes bundlePulse {
+  0%, 100% {
+    box-shadow:
+      0 0 5px rgba(201, 168, 76, 0.4),
+      0 0 15px rgba(201, 168, 76, 0.2),
+      0 0 30px rgba(201, 168, 76, 0.1);
+  }
+  50% {
+    box-shadow:
+      0 0 10px rgba(201, 168, 76, 0.6),
+      0 0 25px rgba(201, 168, 76, 0.4),
+      0 0 50px rgba(201, 168, 76, 0.2);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
