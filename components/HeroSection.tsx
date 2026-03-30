@@ -1,7 +1,4 @@
-"use client";
-
 import Image from "next/image";
-
 
 export default function HeroSection() {
   return (
@@ -55,7 +52,7 @@ export default function HeroSection() {
             }}
           >
             <Image
-              src="/images/omar-profile.jpeg"
+              src="/images/lara-profile.jpeg"
               alt="Lara Goldman"
               width={56}
               height={56}

@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import SalesProgress from "./SalesProgress";
 import { useCheckout } from "@/lib/useCheckout";
 
@@ -12,7 +13,7 @@ export default function ProductReveal() {
     <section className="bg-dark-lighter py-20 px-6">
       <div className="max-w-xl mx-auto text-center">
         <div className="w-48 mx-auto mb-8 gold-border-glow rounded-lg overflow-hidden">
-          <img src="/images/product-image.jpg" alt="The Family Wealth Playbook" className="w-full h-auto" />
+          <Image src="/images/product-image.jpg" alt="The Family Wealth Playbook" width={384} height={480} className="w-full h-auto" />
         </div>
         <h2 className="font-serif text-3xl sm:text-4xl mb-4 gold-shimmer">
           The Family Wealth Playbook

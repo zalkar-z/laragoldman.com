@@ -2,22 +2,22 @@ import { ReviewBlock } from "./ReviewBlock";
 
 const reviews = [
   {
+    photo: "/images/reviews/2.jpg",
+    name: "Marcus T.",
+    tag: "Verified Purchase",
+    text: "My wife and I read this together over two weekends and it changed how we talk about money in our house. We're both professionals — I'm in healthcare, she's in HR — we do alright. But we've been doing alright for 15 years and somehow still feel like we're one bad month away from stress. This book explains exactly why that happens and more importantly what to do about it. The section on generational wealth habits versus generational wealth luck? That hit different. We have three kids and we've been doing this wrong. Not badly — just without a map. We actually got the physical limited edition and it's sitting on the kitchen counter now. The kids have picked it up and asked questions. That alone was worth it. Lara writes like someone who's been in the room with wealthy families and is finally allowed to tell you what he saw.",
+  },
+  {
     photo: "/images/reviews/3.jpg",
     name: "Rajan M.",
     tag: "Verified Purchase",
     text: "I work in financial services. I know what a pension is, I know what an ISA is, I've read the Barefoot Investor twice. And I still found myself underlining things in this book. That's not something I expected to say. What Lara does differently is he doesn't talk about products — he talks about mindset architecture. How wealthy families make decisions, how they talk about money with their children, how they think about assets versus income. It sounds simple but the execution chapter alone restructured how I'm approaching our family finances this year. The limited edition print is a genuinely nice object — feels considered. I've recommended it to four colleagues already. At this price point there's absolutely no reason not to get it.",
   },
   {
-    photo: "/images/reviews/4.jpg",
-    name: "James O.",
+    photo: "/images/reviews/1.jpg",
+    name: "David H.",
     tag: "Verified Purchase",
-    text: "My wife spotted this online and I'm glad she did. We've got two kids — 16 and 11 — and we've been having those half-conversations about money that never go anywhere. You know the ones. 'We should really sort out a proper plan.' And then life happens and you don't. This book is the kick we needed. It's short enough to actually finish, which matters. Clear chapters, real examples, no waffle. The bit about what to teach your kids about money and when — we read that section out loud at dinner. My son actually put his phone down and listened. The physical copy arriving in the post felt like an event, genuinely. It's on our bookshelf now next to the stuff we actually care about. If you're sitting on the fence — just get it. You'll regret not reading it sooner.",
-  },
-  {
-    photo: "/images/reviews/5.jpg",
-    name: "Simone A.",
-    tag: "Verified Purchase",
-    text: "I don't usually leave reviews but this one deserved it. I'm a secondary school deputy head, single mum of two, and I have spent years feeling like I'm doing everything right and still somehow falling behind. Good salary, sensible with money, no silly debt. But no real wealth either. No plan. Just hope. This book was the first time I've read something about money that didn't make me feel stupid or sold to. Lara writes like she's talking to you — not at you. The framework around how wealthy families actually think about money across generations, not just month to month — that reframed everything for me. I ordered the digital copy and they sent a physical limited edition as part of a promotion. It's beautiful. It's on my bedside table and I've already earmarked three chapters to reread. My eldest is 17 and I've started having proper money conversations with her using the frameworks in this book. That's the point, isn't it. This is for them.",
+    text: "I'll be honest — my wife ordered this for me after watching one of Lara's videos and I was sceptical. I'm 61, been working in project management my whole career, own my home, never been reckless with money. But we've never really built anything either. Just... maintained. This book put words to something that's been nagging at me for twenty years. The chapter on how wealthy families treat money as a system rather than a salary — I read it twice. Straight away. We sat down that weekend and had a proper conversation about our finances for the first time in years. Practical, no jargon, no judgment. And the fact it arrived as a printed limited edition felt like a proper thing — not some PDF you forget about. My daughter's getting a copy when she turns 30. Genuinely one of the best £9 I've ever spent.",
   },
 ];
 
